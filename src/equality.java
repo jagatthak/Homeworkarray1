@@ -3,17 +3,21 @@ import java.util.Arrays;
 
     public class equality {
         public static void main(String[] args) {
-            int a[] = new int[]{15, 16, 18, 23};
-            int b[] = new int[]{16, 15, 28, 29};
-            //introduce boolean Arrays.equals to check equality of both arrays
-            boolean compare = Arrays.equals(a, b);
-            if (compare == true) {
-                System.out.println("a and b are equal");}
-            else{
-                System.out.println("a and b are not equal");
-
+            int first[] = {1, 2, 3, 4};
+            int second[] = {1, 6, 3, 4};
+            if (compare(first, second)) {
+                System.out.println("Arrays are equal");
+            } else {
+                System.out.println("Arrays are not equal");
             }
         }
+        public static boolean compare(int[] a, int[] b) {
+            if (a.length != b.length)
+                return false;
+                for (int i = 0; i < a.length; i++) {
+                    if (a[i] != b[i])
+                        return false;
+                    }
+                    return true;
+        }
     }
-
-

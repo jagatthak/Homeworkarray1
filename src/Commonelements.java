@@ -8,8 +8,10 @@ public class Commonelements {
             for (int j = 0; j < a2.length; j++) {
                 if (a1[i] == a2[j]) {
                     System.out.println(a1[i]);
+                    break;
                 }
             }
-        }
+            }
     }
+
 }

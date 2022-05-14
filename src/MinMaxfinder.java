@@ -1,11 +1,10 @@
 import java.util.Arrays;
 
-public class SortAscend {
-
+public class MinMaxfinder {
     public static void main(String[] args) {
-        int a1[] = {80, 30, 21, 100, -2, 18, 52, 36};
-        System.out.println("The sorted int array is: ");
-        //sorting logic
+        int a1[] = {70,40, 29, 120, -5, -1, 50, 38};
+        System.out.println("Minimum and Maximum values are: ");
+        //sorting array a1
         for (int i = 0; i < a1.length; i++) {
             for (int j = i + 1; j < a1.length; j++) {
                 int k = 0;
@@ -15,7 +14,12 @@ public class SortAscend {
                     a1[j] = k;
                 }
             }
-            System.out.println(a1[i]);
         }
+            //Assigning min and max array position
+            int min = a1[0];
+            System.out.println(min);
+            int max = a1[a1.length - 1];
+            System.out.println(max);
     }
 }
+

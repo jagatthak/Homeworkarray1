@@ -2,12 +2,10 @@ import java.util.Scanner;
 
 public class Occurences {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a string : ");
-        String str = scan.nextLine();
-        char ch = 'a';
+        String str ="Hello England";
+        char ch = 'n';
         int count =0;
-        //counting total number of 'a' in the string with for loop after comparing each char in string to 'a'
+        //counting total number of 'n' in the string with for loop after comparing each char in string to 'n'
         for(int i =0;i< str.length();i++){
             if( str.charAt(i)==ch)
                 count++;
